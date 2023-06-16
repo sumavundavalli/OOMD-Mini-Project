@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url('mainlogin.jpg'); /* Replace 'background-image.jpg' with the path to your desired image */
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      max-width: 400px;
+      text-align: center;
+    }
+
+    .button-container {
+      margin-top: 20px;
+    }
+
+    .button {
+      padding: 12px 24px;
+      font-size: 18px;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-bottom: 10px;
+    }
+
+    .button:hover {
+      background-color: #45a049;
+    }
+
+    .container h2 {
+      font-size: 60px;
+      color: white;
+    }
+
+  </style>
+  <script>
+    function login() {
+        window.location.href = 'companylogin.html';}
+    function userlogin(){
+        window.location.href = 'login.html'
+    }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <h2>Login Page</h2>
+    <div class="button-container">
+      <button class="button" onclick="login('companylogin.html')">Company Login</button>
+      <br></br>
+      <button class="button" onclick="userlogin('login.html')">Customer Login</button>
+    </div>
+  </div>
+</body>
+</html>
